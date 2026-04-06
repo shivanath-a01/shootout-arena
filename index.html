@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shootout Arena</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+      url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .section-bg {
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+      url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .hover-card:hover {
+      transform: translateY(-8px);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+<!-- NAVBAR -->
+<header class="flex justify-between items-center p-4 fixed w-full z-50 bg-black/70 backdrop-blur-md">
+  <h1 class="text-xl font-bold text-green-400">Shootout Arena</h1>
+
+  <nav class="hidden md:flex gap-6">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="flex gap-2">
+    <a href="https://wa.me/918086010595?text=Hi%20I%20want%20to%20book%20Shootout%20Arena"
+       class="bg-green-500 px-4 py-2 rounded-lg text-black font-semibold">
+       Book Now
+    </a>
+
+    <a href="https://www.instagram.com/shoot_out_arena"
+       target="_blank"
+       class="bg-pink-500 px-4 py-2 rounded-lg text-white font-semibold">
+       Instagram
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4">
+
+  <h1 class="text-5xl md:text-6xl font-bold mb-4 text-green-400">
+    Shootout Arena
+  </h1>
+
+  <p class="text-lg md:text-xl mb-6 max-w-xl">
+    Experience the ultimate football & cricket turf in Kundamkuzhy, Kasargod.
+    Play under premium floodlights with your friends anytime.
+  </p>
+
+  <a href="https://wa.me/918086010595?text=Hi%20I%20want%20to%20book%20Shootout%20Arena"
+     class="bg-green-500 px-6 py-3 text-black rounded-lg font-bold">
+     Book Your Slot
+  </a>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-bg p-10 text-center">
+
+  <h2 class="text-4xl font-bold mb-6 text-green-400">About the Turf</h2>
+
+  <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+    Shootout Arena is a premium turf located in Kundamkuzhy, Kasargod,
+    designed for both football and cricket enthusiasts. Whether you're
+    planning a casual match with friends or organizing competitive games,
+    our turf provides a high-quality playing experience with excellent
+    lighting and well-maintained ground conditions.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-10">
+
+    <div class="glass p-6 rounded-xl hover-card">
+      <h3 class="text-xl font-semibold mb-2">⚽ Football Ready</h3>
+      <p>Perfect surface for 5s & 7s matches.</p>
+    </div>
+
+    <div class="glass p-6 rounded-xl hover-card">
+      <h3 class="text-xl font-semibold mb-2">🌙 Night Play</h3>
+      <p>Bright floodlights for night games.</p>
+    </div>
+
+    <div class="glass p-6 rounded-xl hover-card">
+      <h3 class="text-xl font-semibold mb-2">🏏 Multi-Sport</h3>
+      <p>Suitable for cricket & other games.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="p-10 text-center bg-black">
+
+  <h2 class="text-4xl font-bold mb-8 text-green-400">Pricing</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="glass p-8 rounded-xl hover-card">
+      <h3 class="text-2xl mb-2">Day Time</h3>
+      <p>6 AM – 6 PM</p>
+      <p class="text-3xl mt-4 font-bold text-green-400">₹800/hr</p>
+    </div>
+
+    <div class="glass p-8 rounded-xl hover-card">
+      <h3 class="text-2xl mb-2">Night Time</h3>
+      <p>6 PM – 11 PM</p>
+      <p class="text-3xl mt-4 font-bold text-green-400">₹1200/hr</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section-bg p-10 text-center">
+
+  <h2 class="text-4xl font-bold mb-8 text-green-400">Gallery</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b" class="rounded-lg hover:scale-105 transition">
+
+    <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e" class="rounded-lg hover:scale-105 transition">
+
+  </div>
+
+</section>
+<!-- LOCATION -->
+<section class="p-10 text-center bg-black">
+
+  <h2 class="text-4xl font-bold mb-6 text-green-400">Location</h2>
+
+  <iframe 
+    src="https://maps.google.com/maps?q=Shootout%20Arena%20Kundamkuzhy&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300" class="rounded-lg">
+  </iframe>
+
+<!-- BOOKING SECTION -->
+<section id="booking" class="p-10 text-center bg-black">
+
+  <h2 class="text-4xl font-bold mb-6 text-green-400">Book Your Slot</h2>
+
+  <div class="max-w-xl mx-auto bg-white/5 p-6 rounded-xl backdrop-blur">
+
+    <!-- DATE -->
+    <div class="mb-4 text-left">
+      <label class="block mb-2 font-semibold">📅 Select Date</label>
+      <input type="date" id="date"
+        class="w-full p-3 rounded-lg text-black">
+    </div>
+
+    <!-- TIME -->
+    <div class="mb-4 text-left">
+      <label class="block mb-2 font-semibold">⏰ Select Time</label>
+
+      <select id="time" class="w-full p-3 rounded-lg text-black">
+        <option value="">Choose Time</option>
+
+        <option>6:00 AM</option>
+        <option>6:30 AM</option>
+        <option>7:00 AM</option>
+        <option>7:30 AM</option>
+        <option>8:00 AM</option>
+        <option>8:30 AM</option>
+        <option>9:00 AM</option>
+        <option>9:30 AM</option>
+
+        <option>5:00 PM</option>
+        <option>5:30 PM</option>
+        <option>6:00 PM</option>
+        <option>6:30 PM</option>
+        <option>7:00 PM</option>
+        <option>7:30 PM</option>
+        <option>8:00 PM</option>
+        <option>8:30 PM</option>
+
+        <option>9:00 PM</option>
+        <option>9:30 PM</option>
+        <option>10:00 PM</option>
+        <option>10:30 PM</option>
+        <option>11:00 PM</option>
+        <option>11:30 PM</option>
+        <option>12:00 AM</option>
+      </select>
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="bookNow()"
+      class="bg-green-500 px-6 py-3 rounded-lg text-black font-bold w-full mt-2">
+      Confirm Booking
+    </button>
+
+  </div>
+
+</section>
+<!-- CONTACT -->
+<section id="contact" class="section-bg p-10 text-center">
+
+  <h2 class="text-4xl font-bold mb-6 text-green-400">Contact</h2>
+
+  <p class="mb-4 text-lg">📞 8086010595</p>
+
+  <div class="flex flex-col md:flex-row justify-center gap-4">
+
+    <a href="tel:8086010595"
+       class="bg-blue-500 px-6 py-3 rounded-lg">
+       Call Now
+    </a>
+
+    <a href="https://wa.me/918086010595?text=Hi%20I%20want%20to%20book%20Shootout%20Arena"
+       class="bg-green-500 px-6 py-3 rounded-lg text-black font-bold">
+       WhatsApp Booking
+    </a>
+
+    <a href="https://www.instagram.com/shoot_out_arena"
+       target="_blank"
+       class="bg-pink-500 px-6 py-3 rounded-lg">
+       Visit Instagram
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FLOAT BUTTON -->
+<a href="https://wa.me/918086010595?text=Hi%20I%20want%20to%20book%20Shootout%20Arena"
+   class="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full shadow-lg text-black">
+   💬
+</a>
+
+<!-- FOOTER -->
+<footer class="text-center p-4 bg-black border-t border-green-500">
+  <p>© 2026 Shootout Arena | Play Like a Pro ⚽</p>
+</footer>
+
+<script>
+function bookNow() {
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+
+  if (!date || !time) {
+    alert("Please select date and time");
+    return;
+  }
+
+  const message = `Hi, I want to book Shootout Arena on ${date} at ${time}`;
+  const url = `https://wa.me/918086010595?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
